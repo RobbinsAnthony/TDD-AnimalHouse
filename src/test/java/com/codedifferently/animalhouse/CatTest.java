@@ -36,5 +36,21 @@ public class CatTest {
         Assert.assertEquals(givenBirthDate, retrievedBirthDate);
         Assert.assertEquals(givenId, retrievedId);
     }
+    @Test
+    public void speakTest(){
+        String name = "John";
+        Date givenBirthDate = new Date();
+        int givenId = 7;
+
+        Cat cat = new Cat(name,givenBirthDate, givenId);
+        String expected = "meow";
+        String actual = cat.speak();
+
+        Assert.assertEquals(expected, actual);
+        
+
+
+    }
+
 
 }
